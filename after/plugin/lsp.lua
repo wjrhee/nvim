@@ -4,6 +4,8 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
   'tsserver',
+  'eslint',
+  'jedi_language_server',
   'rust_analyzer',
 })
 
