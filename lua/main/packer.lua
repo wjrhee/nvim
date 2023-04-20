@@ -65,4 +65,32 @@ return require('packer').startup(function(use)
           require('gitsigns').setup()
       end
   }
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+      require('Comment').setup()
+    end
+  }
+  use {
+    'MunifTanjim/prettier.nvim',
+    config = function()
+      require('prettier').setup({
+        bin = 'prettier',
+        filetypes = {
+          "css",
+          "html",
+          "graphql",
+          "javascript",
+          "javascriptreact",
+          "json",
+          "less",
+          "markdown",
+          "scss",
+          "typescript",
+          "typescriptreact",
+          "yaml",
+        }
+      })
+    end
+  }
 end)
