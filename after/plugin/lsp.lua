@@ -7,6 +7,7 @@ lsp.ensure_installed({
   'eslint',
   'jedi_language_server',
   'rust_analyzer',
+  'gopls',
 })
 
 -- Fix Undefined global 'vim'

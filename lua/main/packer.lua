@@ -19,7 +19,14 @@ return require('packer').startup(function(use)
 		  vim.cmd('colorscheme rose-pine')
 	  end
   })
+  -- use({'shaunsingh/seoul256.nvim',
+  --   as = 'seoul256',
+  --   config = function()
+  --     vim.cmd('colorscheme seoul256')
+  --   end
+  -- })
   use({"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"})
+  use("nvim-treesitter/nvim-treesitter-context");
   use("nvim-treesitter/playground")
   use("theprimeagen/harpoon")
   use("mbbill/undotree")
